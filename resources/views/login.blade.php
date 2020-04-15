@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{{asset('tp/css/tp.css')}}">
     <title>Sign In</title>
     <style>
-     #loader {
+    #loader {
     transition: all 0.3s ease-in-out;
     opacity: 1;
     visibility: visible;
@@ -17,7 +17,7 @@
     z-index: 90000;
 }
 
-#loader.fadeOut {
+     #loader.fadeOut {
     opacity: 0;
     visibility: hidden;
 }

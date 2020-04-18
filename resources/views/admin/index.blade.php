@@ -29,7 +29,7 @@
                   <div class="card-icon">
                     <i class="material-icons">store</i>
                   </div>
-                  <p class="card-category">Pending</p>
+                  <p class="card-category">Pendin   jhg</p>
                   <h3 class="card-title">4 Orang</h3>
                 </div>
                 <div class="card-footer">

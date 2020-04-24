@@ -15,6 +15,8 @@ The above copyright notice and this permission notice shall be included in all c
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets-admin/img/apple-icon.png')}}">
+  <link rel="stylesheet" href="{{asset('assets-admin/plugins/datatables-bs4/css/dataTables.bootstrap4.css')}}">
+
   <link rel="icon" type="image/png" href="{{ asset('assets-admin/img/favicon.png')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
@@ -50,9 +52,9 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.html">
+            <a class="nav-link" href="/alumni">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>Data Alumni</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -451,6 +453,34 @@ The above copyright notice and this permission notice shall be included in all c
 
     });
   </script>
+ <script>
+    $(function () {
+      $("#example3").DataTable();
+      $('#example1').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+      });
+    });
+  </script>
+
+  {{-- <script>
+    $(document).ready(function() {
+  $('#example').DataTable( {
+      "scrollX": true
+  } );
+} );
+</script> --}}
+
+<script src="{{asset('assets-admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
+<script src="{{asset('assets-admin/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{asset('assets-admin/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('assets-admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets-admin/dist/js/adminlte.min.js')}}"></script>
+<script src="{{asset('assets-admin/dist/js/demo.js')}}"></script>
 </body>
 
 </html>
